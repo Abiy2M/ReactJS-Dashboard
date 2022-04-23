@@ -1,13 +1,32 @@
 import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
+import Navbar from "../components/Navbar/Navbar";
 import "./Home.scss";
+import Widget from "../components/Widget/Widget.jsx";
+import Featured from "../components/Featured/Featured";
+import Chart from "../components/Chart/Chart";
+import Table from "../components/Table/Table";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="home">
-      <Sidebar/>
+      <Sidebar />
       <div className="home_container">
-        home container
+        <Navbar />
+        <div className="widgets">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
+        </div>
+        <div className="charts">
+          <Featured />
+          <Chart />
+        </div>
+        <div className="list_container">
+          <div className="list_title">Latest Transactions</div>
+          <Table/>
+        </div>
       </div>
     </div>
   );
