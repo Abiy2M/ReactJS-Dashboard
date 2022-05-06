@@ -15,6 +15,7 @@
       color: #50aefc;
       font-size: 26px;
       font-weight: bold;
+      box-shadow: none !important;
     }
   }
   hr {
@@ -55,9 +56,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    
-    
-    
+    border: none;
+    box-shadow: none !important;
+
     .color_options {
       width: 25px;
       height: 25px;

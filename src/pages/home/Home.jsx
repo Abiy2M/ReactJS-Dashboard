@@ -1,11 +1,11 @@
 import React from "react";
-import Sidebar from "../components/Sidebar/Sidebar";
-import Navbar from "../components/Navbar/Navbar";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Navbar from "../../components/Navbar/Navbar";
 import "./Home.scss";
-import Widget from "../components/Widget/Widget.jsx";
-import Featured from "../components/Featured/Featured";
-import Chart from "../components/Chart/Chart";
-import Table from "../components/Table/Table";
+import Widget from "../../components/Widget/Widget.jsx";
+import Featured from "../../components/Featured/Featured";
+import Chart from "../../components/Chart/Chart";
+import Table from "../../components/Table/Table";
 
 const Home = (props) => {
   return (
@@ -21,7 +21,7 @@ const Home = (props) => {
         </div>
         <div className="charts">
           <Featured />
-          <Chart />
+          <Chart title={'Last 6 Months (Revenue)'}/>
         </div>
         <div className="list_container">
           <div className="list_title">Latest Transactions</div>

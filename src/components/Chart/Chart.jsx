@@ -22,10 +22,10 @@ const data = [
   { name: "June", Total: 1700 },
 ];
 
-const Chart = () => {
+const Chart = ({aspect, title}) => {
   return (
     <div className="chart">
-      <div className="title">Last 6 Months (Revenue)</div>
+      <div className="title">{title}</div>
       {/* <ResponsiveContainer> */}
       <LineChart
       className="line_chart"
